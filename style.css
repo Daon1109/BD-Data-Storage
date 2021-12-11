@@ -1,0 +1,57 @@
+.main_title {
+  padding-bottom: 5px;
+  border-bottom: gray 2px solid;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.Tools {
+  float: right;
+  /* position sticky */
+  position: sticky;
+  top:30px;
+}
+.createData {
+  text-align: center;
+  color:white;
+  padding:10px;
+  padding-top:7px;
+  margin-right: 5px;
+  background-color: #52b2de;
+  border-radius: 20px;
+}
+
+.nightmode {
+  padding:10px;
+  border:none;
+  border-radius: 25px;
+  color:white;
+  background-color: black;
+}
+.daymode {
+  padding:10px;
+  border:none;
+  border-radius: 25px;
+  color:black;
+  background-color:lightgray;
+}
+
+.search {
+  display: inline-block
+}
+
+.search_input {
+  font-size: 30px;
+  height: 45px;
+}
+.search_submit  {
+  font-size: 30px;
+}
+
+.list_article {
+  margin-top: 50px;
+}
+#namelist {
+  font-size:20px;
+}
