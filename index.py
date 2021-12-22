@@ -35,10 +35,10 @@ print('''<!DOCTYPE html>
         </script>
     </head>
     <body>
-        <h1 class="main_title">BD Data Storage</h1>
+        <h1 class="main_title"><a href="index.py">BD Data Storage</a></h1>
         <div class="Tools">
-            <a href="create.py">
-                <p class="createData">Create</p>
+            <a href="create_page.py">
+                <p class="createLink">Create</p>
             </a>
             <input class="nightmode" type="button" value="NightMode" onclick="
                 nightDay(this);
@@ -47,7 +47,7 @@ print('''<!DOCTYPE html>
 
         <form action="countdown.py">
             <div class="search">
-                <input class="search_input" type="text" placeholder="Enter your name" name="name">
+                <input id="input_text" class="search_input" type="text" placeholder="Enter your name" name="name">
                 <input class="search_submit" type="submit" value="Search">
             </div>
         </form>
@@ -57,4 +57,4 @@ print('''<!DOCTYPE html>
             <p id="namelist"></p>
         </div>
     </body>
-</html>'''.format(lists=lists))
+</html>''')
