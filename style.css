@@ -1,5 +1,6 @@
 .main_title {
-  padding-bottom: 5px;
+  margin-top: 10px;
+  padding-bottom: 10px;
   border-bottom: gray 2px solid;
 }
 a {
@@ -12,7 +13,16 @@ a {
   position: sticky;
   top:30px;
 }
-.createData {
+.createLink{
+  text-align: center;
+  color:white;
+  padding:10px;
+  padding-top:7px;
+  margin-right: 5px;
+  background-color: #52b2de;
+  border-radius: 20px;
+}
+.homeLink{
   text-align: center;
   color:white;
   padding:10px;
@@ -23,14 +33,14 @@ a {
 }
 
 .nightmode {
-  padding:10px;
+  padding:13px;
   border:none;
   border-radius: 25px;
   color:white;
   background-color: black;
 }
 .daymode {
-  padding:10px;
+  padding:13px;
   border:none;
   border-radius: 25px;
   color:black;
@@ -41,17 +51,47 @@ a {
   display: inline-block
 }
 
+input::placeholder {
+  color: rgb(158, 157, 157);
+  font-style: italic;
+}
+#input_text {
+  border-width: 3px;
+  border-color: lightgray;
+}
 .search_input {
+  margin-top: 15px;
   font-size: 30px;
   height: 45px;
+  width: 600px;
 }
 .search_submit  {
+  margin-top: 15px;
   font-size: 30px;
+  padding: 6px;
 }
 
 .list_article {
-  margin-top: 50px;
+  margin-top: 70px;
+  text-decoration: underline;
 }
 #namelist {
   font-size:20px;
+}
+
+.create {
+  font-size: 30px;
+  margin-top: 40px;
+}
+.create_input {
+  font-size: 30px;
+}
+.create_index {
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: 600;
+}
+.create_submit  {
+  margin-top: 20px;
+  font-size: 25px;
 }
