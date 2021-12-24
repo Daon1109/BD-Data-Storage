@@ -19,7 +19,5 @@ opened_file.close()
 
 
 #Redirection
-#countdown page 만들면 거기로 리다이렉트 하면됨
-#print("Location: countdown.py?id=" + name)
-print("Location: index.py")
+print("Location: countdown_page.py?id=" + name)
 print()
