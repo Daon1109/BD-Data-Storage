@@ -15,12 +15,13 @@ opened_file = open('List', 'w')
 opened_file.write(lists)
 opened_file.close()
 
+
 #HTML Code
 print('''<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>BD Data Storage</title>
+        <title>Create Page</title>
         <link rel="stylesheet" href="style.css">
         <script src="nightMODE.js"></script>
 
@@ -35,26 +36,29 @@ print('''<!DOCTYPE html>
         </script>
     </head>
     <body>
-        <h1 class="main_title"><a href="index.py">BD Data Storage</a></h1>
+        <h1 class="main_title"><a href="index.py">BD Data Storage</a> - Create</h1>
         <div class="Tools">
-            <a href="create_page.py">
-                <p class="createLink">Create</p>
+            <a href="index.py">
+                <p class="homeLink">Home</p>
             </a>
             <input class="nightmode" type="button" value="NightMode" onclick="
                 nightDay(this);
             ">
         </div>
 
-        <form action="countdown.py">
-            <div class="search">
-                <input id="input_text" class="search_input" type="text" placeholder="Enter your name" name="name">
-                <input class="search_submit" type="submit" value="Search">
+        <form action="create_process.py" method="post">
+            <div class="create">
+                <div class="create_index">Name</div>
+                <input id="input_text" class="create_input" type="text" placeholder="Enter your name" name="name">
+                <br>
+                <div class="create_index">PassWord</div>
+                <input id="input_text" class="create_input" type="text" placeholder="Enter your password" name="password">
+                <br>
+                <div class="create_index">Month and Date of the Birthday</div>
+                <input id="input_text" class="create_input" type="text" placeholder="Month" name="month"><br>
+                <input id="input_text" class="create_input" type="text" placeholder="Date" name="date"><br>
+                <input class="create_submit" type="submit" value="Create">
             </div>
         </form>
-
-        <div>
-            <h2 class="list_article" onclick="fetchArticle('List')">See Other People's Birthday</h2>
-            <p id="namelist"></p>
-        </div>
     </body>
 </html>''')
