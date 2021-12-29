@@ -7,7 +7,7 @@ import os
 filenames = os.listdir('Data')
 lists = ''
 for eachfile in filenames:
-      lists = lists + '<li><a href = "countdown.py?id={name}">{name}</a></li>'.format(name = eachfile)
+      lists = lists + '<li><a href = "countdown_page.py?id={name}">{name}</a></li>'.format(name = eachfile)
       lists = "{}".format(lists)
 
 #Writing List file
