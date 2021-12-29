@@ -19,5 +19,5 @@ opened_file.close()
 
 
 #Redirection
-print("Location: countdown_page.py?id=" + name)
+print("Location: countdown_pipeline.py?id=" + name)
 print()
