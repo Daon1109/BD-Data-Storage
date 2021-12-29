@@ -7,7 +7,7 @@ import os
 filenames = os.listdir('Data')
 lists = ''
 for eachfile in filenames:
-      lists = lists + '<li><a href = "countdown.py?id={name}">{name}</a></li>'.format(name = eachfile)
+      lists = lists + '<li><a href = "countdown_pipeline.py?id={name}">{name}</a></li>'.format(name = eachfile)
       lists = "{}".format(lists)
 
 #Writing List file
@@ -28,7 +28,7 @@ print('''<!DOCTYPE html>
             function fetchArticle(fileName) {{
                 fetch(fileName).then(function(response) {{
                     response.text().then(function(text) {{
-                        document.querySelector('#namelist').innerHTML=text;
+                        document.querySelector('#namelist').innerHTML=text; 
                     }})
                 }})
             }}
@@ -45,9 +45,9 @@ print('''<!DOCTYPE html>
             ">
         </div>
 
-        <form action="countdown.py">
+        <form action="countdown_pipeline.py">
             <div class="search">
-                <input id="input_text" class="search_input" type="text" placeholder="Enter your name" name="name">
+                <input id="input_text" class="search_input" type="text" placeholder="Enter your name" name="id">
                 <input class="search_submit" type="submit" value="Search">
             </div>
         </form>
