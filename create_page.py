@@ -2,19 +2,6 @@
 print("Content-type: text/html")
 print()
 
-#Making List
-import os
-filenames = os.listdir('Data')
-lists = ''
-for eachfile in filenames:
-      lists = lists + '<li><a href = "countdown_page.py?id={name}">{name}</a></li>'.format(name = eachfile)
-      lists = "{}".format(lists)
-
-#Writing List file
-opened_file = open('List', 'w')
-opened_file.write(lists)
-opened_file.close()
-
 
 #HTML Code
 print('''<!DOCTYPE html>
