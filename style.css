@@ -95,3 +95,13 @@ input::placeholder {
   margin-top: 20px;
   font-size: 25px;
 }
+
+.cntdn_button {
+  text-align: center;
+  color:white;
+  padding:10px;
+  padding-top:7px;
+  margin-right: 5px;
+  background-color: #31dba3;
+  border-radius: 20px;
+}
