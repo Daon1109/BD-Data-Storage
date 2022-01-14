@@ -25,22 +25,28 @@
     border-radius: 20px;
   }
   .updateLink{
+    font-size: medium;
     text-align: center;
     color:white;
+    border-width: 0;
     padding:10px;
-    padding-top:7px;
+    width: 90px;
+    margin-top: 15px;
     margin-right: 5px;
     background-color: #00bd3f;
     border-radius: 20px;
   }
   .deleteLink{
+    font-size: medium;
     text-align: center;
     color:white;
+    border-width: 0;
     padding:10px;
-    padding-top:7px;
+    width: 90px;
+    margin-top: 15px;
     margin-right: 5px;
-    background-color: red;
     border-radius: 20px;
+    background-color: red;
   }
   
   .nightmode {
@@ -61,5 +67,5 @@
   .countdownarticle {
       text-align: center;
       font-size: 50px;
-      margin-top: 140px;
+      margin-top: 150px;
   }
