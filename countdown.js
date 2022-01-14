@@ -1,4 +1,7 @@
 
+//if statement programming
+// - distance status
+
 
 function sendingdata(stringT)  {
 
