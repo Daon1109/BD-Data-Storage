@@ -11,7 +11,7 @@ date = form["date"].value
 
 
 #Creating File
-opened_file = open('Data/'+name, 'w')
+opened_file = open('Data/'+name, 'w', encoding="UTF-8")
 #Article Design
 article = name + '\n' + pw + '\n' + month + '\n' + date
 opened_file.write(article)
