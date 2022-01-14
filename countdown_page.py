@@ -15,7 +15,7 @@ print('''<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>BD Data Storage</title>
+        <title>{name}'s Birthday Countdown</title>
         <link rel="stylesheet" href="countdownstyles.css">
         <script src="countdown.js"></script>
         <script src="nightMODE.js"></script>
@@ -34,12 +34,18 @@ print('''<!DOCTYPE html>
             <input class="nightmode" type="button" value="NightMode" onclick="
                 nightDay(this);
             ">
-            <a href="update.py">
-                <p class="updateLink">Update</p>
-            </a>
-            <a href="delete.py">
-                <p class="deleteLink">Delete</p>
-            </a>
+
+            <form action="UA_page.py" method="post">
+                <input type="hidden" name="link" value="update">
+                <input type="hidden" name="name" value="{name}">
+                <input class="updateLink" type="submit" value="Update">
+            </form>
+            <form action="UA_page.py" method="post">
+                <input type="hidden" name="link" value="delete">
+                <input type="hidden" name="name" value="{name}">
+                <input class="deleteLink" type="submit" value="Delete">
+            </form>
+
         </div>
 
         <div class="countdownarticle">
@@ -51,3 +57,15 @@ print('''<!DOCTYPE html>
 
     </body>
 </html>'''.format(timestring = timestring, name = name))
+
+
+
+#Deleted Code
+'''
+<a href="update.py">
+                <p class="updateLink">Update</p>
+            </a>
+<a href="delete.py">
+                <p class="deleteLink">Delete</p>
+            </a>
+'''
