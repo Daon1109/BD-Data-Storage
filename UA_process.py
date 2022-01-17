@@ -30,6 +30,11 @@ date = lists[3]
 
 if link == "update":
     if input_password == password:
+        # Deleting Process
+        #This file directory is not available in Pythonanywhere too
+        fileToDelete = open('C:\SERVER\\apache2\htdocs\BD Data Storage\Data\\'+name,'w',encoding="UTF-8")
+        fileToDelete.close()
+        os.remove("Data/"+name)
         #HTML Code
         print("Content-type: text/html")
         print()
@@ -60,7 +65,7 @@ if link == "update":
                         <div class="update_index">Name</div>
                         <input id="input_text" class="update_input" type="text" value="{name}" name="name">
                         <br>
-                        <div class="update_index">PassWord</div>
+                        <div class="update_index">Password</div>
                         <input id="input_text" class="update_input" type="text" value="{password}" name="password">
                         <br>
                         <div class="update_index">Month and Date of the Birthday</div>
