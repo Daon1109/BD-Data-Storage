@@ -53,7 +53,7 @@ print('''<!DOCTYPE html>
         </form>
 
         <div>
-            <h2 class="list_article" onclick="fetchArticle('List')">See Other People's Birthday</h2>
+            <h2 class="list_article" onclick="fetchArticle('List')">Show Other's Birthday</h2>
             <p id="namelist"></p>
         </div>
     </body>
